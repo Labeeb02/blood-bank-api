@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/donor.css">
+</head>
+<body>
+    <p>Click the names to see more data.</p>
+    <table>
+        <thead>
+        <tr class="table-headers">
+        {{!-- <th>Name</th> --}}
+        <th>Number</th>
+        <th>Market rate</th>
+        <th>Weight</th>
+        <th>Value</th>
+        </tr>
+        </thead>
+        <tbody>
+        {{!-- <tr>
+        <td>PlayCo Group Universal Flex</td>
+        <th class="mobile-header">Number</th><td>2489</td>
+        <th class="mobile-header">Market rate</th><td>€12.35</td>
+        <th class="mobile-header">Weight</th><td>5%</td>
+        <th class="mobile-header">Value</th><td>€1,536.96</td>
+
+        </tr> --}}
+        <tr>
+            {{#each rows}}
+        {{!-- <td>PlayCo Group Universal Flex</td> --}}
+        <th class="mobile-header">Number</th><td>{{this.name}}</td>
+        <th class="mobile-header">Market rate</th><td>{{this.email}}</td>
+        <th class="mobile-header">Weight</th><td>{{this.city}}</td>
+        <th class="mobile-header">Value</th><td>{{this.state}}</td>
+        </tr>
+        {{/each}}
+        <!-- <tr>
+        <td>House of Dedgeny EUR Flex</td>
+        <th class="mobile-header">Number</th><td>5478</td>
+        <th class="mobile-header">Market rate</th><td>€42.68	</td>
+        <th class="mobile-header">Weight</th><td>2%</td>
+        <th class="mobile-header">Value</th><td>€4,676.02</td>
+        </tr>
+        </tbody>
+    </table>
+    <script src="/js/donor.js"></script>
+</body>
+</html>

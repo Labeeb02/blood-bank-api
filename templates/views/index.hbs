@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/styles1.css">
+  <link rel="icon" href="/img/donate.jpg">
+</head>
+
+<body>
+  <nav id="navbar">
+    <span id="topmsg">Blood Bank Project Made By :- Labeeb And Tarak</span>
+  </nav>
+
+
+<div id="login" class="modal fade" role="dialog">
+  <div class="modal-dialog" id="fill-form">
+    
+    <div class="modal-content">
+      <div class="modal-body">
+        
+        <div class="container" id="container">
+						<div class="form-container sign-up-container">
+							<form action="#" id="donor_form">
+								<h1>Donor Form</h1>
+			
+								<input id="d_name" required = "required" type="text" placeholder="Name" />
+								<input id="d_email" required = "required" type="email" placeholder="Email" />
+								<input id="d_aadhar" required = "required" type="number" placeholder="Aadhar No." />
+                <input id="d_age" required = "required" type="number" placeholder="Age" />
+                <input id="d_weight" required = "required" type="number" placeholder="Weight" />
+                <input id="d_height" required = "required" type="number" placeholder="Height" />
+                <label for="bloodgroup">Choose Your Blood Group</label>
+                <select name="bloodgroup" id="d_bloodgroup">
+                  <optgroup label="A">
+                    <option value="A+">A +ve</option>
+                    <option value="A-">A -ve</option>
+                  </optgroup>
+                  <optgroup label="B">
+                    <option value="B+">B +ve</option>
+                    <option value="B-">B -ve</option>
+                  </optgroup>
+                  <optgroup label="AB">
+                    <option value="AB+">AB +ve</option>
+                    <option value="AB-">AB -ve</option>
+                  </optgroup>
+                  <optgroup label="O">
+                    <option value="O+">O +ve</option>
+                    <option value="O-">O -ve</option>
+                  </optgroup>
+                </select>
+                <label for="bloodgroup">Choose Your Gender</label>
+                <select name="bloodgroup" id="d_gender">
+                    <option value="M">Male</option>
+                    <option value="F">Female</option>
+                    <option value="O">Other</option>
+                </select>
+                <input id="d_city" required = "required" type="text" placeholder="City" />
+                <input id="d_phone" required = "required" type="number" placeholder="Phone No" />
+                
+								<button >Submit</button>
+							</form>
+						</div>
+						<div class="form-container sign-in-container">
+							<form action="#" id="recepient_form">
+								<h1>Recepient Form</h1>
+								<input id="r_name" required = "required" type="text" placeholder="Name" />
+								<input id="r_email" required = "required" type="email" placeholder="Email" />
+								<input id="r_aadhar" required = "required" type="number" placeholder="Aadhar No." />
+                <input id="r_age" required = "required" type="number" placeholder="Age" />
+                <label for="bloodgroup">Choose Your Blood Group</label>
+                <select name="bloodgroup" id="r_bloodgroup">
+                  <optgroup label="A">
+                    <option value="A+">A +ve</option>
+                    <option value="A-">A -ve</option>
+                  </optgroup>
+                  <optgroup label="B">
+                    <option value="B+">B +ve</option>
+                    <option value="B-">B -ve</option>
+                  </optgroup>
+                  <optgroup label="AB">
+                    <option value="AB+">AB +ve</option>
+                    <option value="AB-">AB -ve</option>
+                  </optgroup>
+                  <optgroup label="O">
+                    <option value="O+">O +ve</option>
+                    <option value="O-">O -ve</option>
+                  </optgroup>
+                </select>
+                <label for="bloodgroup">Choose Your Gender</label>
+                <select name="bloodgroup" id="r_gender">
+                    <option value="M">Male</option>
+                    <option value="F">Female</option>
+                    <option value="O">Other</option>
+                </select>
+                <input id="r_city" required = "required" type="text" placeholder="City" />
+                <input id="r_phone" required = "required" type="number" placeholder="Phone No" />
+                
+								{{!-- <button onclick="window.location.href='/table'">Submit</button> --}}
+                <button >Submit</button>
+							</form>
+						</div>
+						<div class="overlay-container">
+							<div class="overlay">
+								<div class="overlay-panel overlay-left">
+									<h1>Do You Want Blood?</h1>
+									<p>Enter the required details and start journey with us</p>
+									<button class="ghost" id="signIn">Recepient Form</button>
+								</div>
+								<div class="overlay-panel overlay-right">
+									<h1>Are You Looking To Donate Blood!</h1>
+									<p>To match up with recepients fill the required details</p>
+									<button class="ghost" id="signUp">Donor Form</button>
+								</div>
+							</div>
+						</div>
+					  </div>
+      </div>
+    </div>
+  </div>  
+</div>
+
+
+  <script src="/js/myscripts.js"></script>
+</body>
+
+</html>
